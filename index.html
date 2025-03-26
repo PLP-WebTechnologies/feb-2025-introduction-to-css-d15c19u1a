@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Three</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <!--Header contains image, heading and paragraph elements -->
+    <header>
+        <img src="codingacademy.png" alt="Coding Academy logo" class="logo" />
+        <h1>Specialization Registration Form</h1>
+        <p>Congratulations! You've finally completed the core learning modules.</p>
+        <p>Please provide the following details to help us enroll you in the Specialization Phase</p>
+    </header>
+
+    <!--Main contains form that submits student details-->
+    <main>
+        <form>
+            <fieldset>
+                <label for="first-name">Enter Your First Name: <input id="first-name" name="first-name" type="text" placeholder="First Name" required /></label>
+                <label for="last-name">Enter Your Last Name: <input id="last-name" name="last-name" type="text" placeholder="Last Name" required /></label>
+                <label for="email">Enter Your Email: <input id="email" name="email" type="email" placeholder="Email" required /></label>
+                <label for="date">Enter Date You Completed Core Learning Modules: <input id="date" name="date" type="date" required /></label>
+                <label for="password">Create a New Password: <input id="password" name="password" type="password" pattern="[a-z0-5]{8,}" placeholder="Password" required /></label>
+            </fieldset>
+
+            <fieldset>
+                <label for="specialization">Which Specialization Module would you like to join?
+                    <select id="specialization" name="specialization">
+                        <option value="">(select one)</option>
+                        <option value="1">Full-Stack Development (MERN)</option>
+                        <option value="2">Mobile-Friendly With Dart</option>
+                        <option value="3">Software Testing</option>
+                        <option value="4">AI for Software Engineering</option>
+                    </select>
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Will you build the final project on your own or in a group?</legend>
+                <label for="solo"><input id="solo" type="radio" name="final-project" /> On My Own</label>
+                <label for="group"><input id="group" type="radio" name="final-project" /> Part Of A Group</label>
+                <label for="undecided"><input id="undecided" type="radio" name="final-project"  checked /> Haven't Decided</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>What are your plans for the final project? (You may select multiple options)</legend>
+                <label for="yes-project"><input id="yes-project" type="checkbox" name="project-plans" /> I have a project idea</label>
+                <label for="no-project"><input id="no-project" type="checkbox" name="project-plans" /> I don't have a project idea</label>
+                <label for="researching-project"><input id="researching-project" type="checkbox"  name="project-plans" /> I am researching on project ideas</label>
+                <label for="working-project"><input id="working-project" type="checkbox" name="project-plans" /> I have started working on a project idea</label>
+                <label for="grouping-then-project"><input id="grouping-then-project" type="checkbox" name="project-plans" /> I am looking for potential group members</label>
+                <label for="learning-then-project"><input id="learning-then-project" type="checkbox" name="project-plans" /> I will start working on a project idea after the Specialization</label>
+                <label for="will-not-project"><input id="will-not-project" type="checkbox" name="project-plans" /> I will not work on a Final Project.</label>
+            </fieldset>
+
+            <input type="submit" value="Submit" id="submit-button" />
+        </form>
+    </main>
+
+    <!--Footer contains copyright notice-->
+    <footer>
+        &copy; 2025. All Rights Reserved.
+    </footer>
+</body>
+
+</html>
