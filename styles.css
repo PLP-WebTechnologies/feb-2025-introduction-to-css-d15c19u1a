@@ -1,0 +1,81 @@
+body {
+    width: 80%;
+    margin: 10px auto;
+    background-color: #01133F;
+    color: white;
+    font-family: Tahoma, Arial, "Consolas", sans-serif;
+    font-size: 16px;
+}
+
+header, footer {
+    text-align: center;
+    background-color: #4a90e2;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.logo {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    border: white double 5px;
+}
+  
+form {
+    background: #4a90e2;
+    width: 60vw;
+    max-width: 600px;
+    min-width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-family: "Consolas", sans-serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+  
+fieldset {
+    border: 3px solid #3b3b4f;
+    margin: 1.2rem 0;
+}
+  
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+  
+input,
+textarea,
+select {
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+    border-radius: 8px;
+    background-color: white;
+    border: 2px solid #01133F;
+}
+  
+input[type="radio"],
+input[type="checkbox"] {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+#submit-button {
+    background-color: #01133F;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+#submit-button:hover {
+    background-color: white;
+    color: #01133F;
+}
